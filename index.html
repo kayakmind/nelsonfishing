@@ -12,7 +12,7 @@
   <title>Nelson Fly Fishing</title>
 </head>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
   <a class="navbar-brand" href="#">Nelson Fly Fishing</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
@@ -26,7 +26,7 @@
         <a class="nav-link" href="#products">Products </a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Contact </a>
+        <a class="nav-link" href="#contact">Contact</a>
 
     </ul>
   </div>
@@ -43,6 +43,7 @@
     </div>
 
   </div>
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
   <div id="products">
 
     <div class="container">
@@ -53,8 +54,8 @@
             <img src="images/fishingnet.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Landing Nets</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-dark">Learn more</a>
+              <p class="card-text"></p>
+              <a href="#handnets" class="btn btn-dark">Learn more</a>
             </div>
           </div>
         </div>
@@ -63,37 +64,62 @@
             <img src="images/amadouflydryer.jpg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Amadou Fly Dryers</h5>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="btn btn-dark">Learn more</a>
+              <p class="card-text"></p>
+              <a href="#flydryer" class="btn btn-dark">Learn more</a>
             </div>
           </div>
-        </div>
-
-        <p>Products can also be found on eBay by looking up “amadou fly drying patches” or “landing nets” made by Nelson on eBay.</p>
+        </div> 
 
       </div>
+
+      <div class="alert alert-primary product-alert" role="alert">
+          Products can also be found on eBay by looking up “amadou fly drying patches” or “landing nets” made by Nelson on eBay.
+      </div>
+
     </div>
 
   </div>
 
   <div id="flydryer">
 
-    <p>I offer handmade amadou fly drying patches at an affordable price. I can also engrave your organization’s logo on patches.</p>
-    <p>These fly dryers are constructed of the finest quality amadou, a natural material obtained from a tree mushroom know a the horse’s hoof fungus (Fomes fomentacius). Keeping your fly dry is key to keeping it floating and visible when fishing.</p>
-    <p>Amadou has an unbelievable absorbent capacity and it the best natural material for drying flies, especially flies made with CDC.</p>
-    <p>I hand make each of these from pigskin leather and amadou harvested in Europe. The dryer patches measure 1 3/4 inches by 2 inches.</p>
-    <p>They vary in thickness, depending on the amadou harvest and are much thicker than the others on the market.</p>
-
+      <div class="jumbotron flydryer">
+          <div class="container">
+            <h1 class="display-3 text-white">Fly Dryers</h1>
+            <p class="text-white">I offer handmade amadou fly drying patches at an affordable price.</p>
+          </div>
+        </div>  
+      <div class="product-description">
+          
+          <p>These fly dryers are constructed of the finest quality amadou, a natural material obtained from a tree mushroom know a the horse’s hoof fungus (Fomes fomentacius). Keeping your fly dry is key to keeping it floating and visible when fishing.</p>
+          <p>Amadou has an unbelievable absorbent capacity and it the best natural material for drying flies, especially flies made with CDC.</p>
+          <p>I hand make each of these from pigskin leather and amadou harvested in Europe. The dryer patches measure 1 3/4 inches by 2 inches.</p>
+          <p>They vary in thickness, depending on the amadou harvest and are much thicker than the others on the market.</p>
+          <p> I can also engrave your organization’s logo on patches.</p>
+      </div>  
+    
   </div>
-  <div id="hand-nets">
+  <div id="handnets">
+
+      <div class="jumbotron handnets">
+          <div class="container">
+            <h1 class="display-3 text-white">Hand Nets</h1>
+            <p class="text-white">I offer quality handnets for flyfishing.</p>
+          </div>
+        </div>  
+      <div class="product-description">
+          
+          <p>These landing nets are attrative and highly functional.</p>
+      </div>  
+    
+  </div>
 
 
   </div>
 
   <div id="contact">
 
-    <h2 class="section-header">Contact</h2>
-    <h2>Please contact me to place an order or ask questions.</h2>
+    <h2 class="section-header">Contact Me</h2>
+    <h3>Please contact me to place an order or ask questions.</h3>
 
     <form class="contact-form" action="https://formspree.io/kayakmind@gmail.com" method="POST">
       <div class="form-group">
@@ -112,8 +138,9 @@
 
       <p>Thanks and tight lines, Kenny Nelson</p>
       <p>Products can also be found on eBay by looking up “amadou fly drying patches” or “landing nets” made by Nelson on eBay.</p>
+    </div>  
 
-  </div>
+  
   <footer class="footer">
 
   </footer>
@@ -122,6 +149,7 @@
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+  <script src="scripts.js"></script>
 </body>
 
 </html>
